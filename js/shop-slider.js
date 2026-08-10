@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.shop-next');
 
 
-    // Kalau section tidak ada, hentikan script
+    // Kalau slider tidak ditemukan
     if (
         !shopTrack ||
         !shopCards.length ||
@@ -28,17 +28,48 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // Posisi slider saat ini
     let shopCurrentIndex = 0;
-
-
-    // Jumlah produk yang terlihat
-    const shopVisibleCards = 3;
 
 
 
     // =============================================
-    // HITUNG LEBAR PERGESERAN
+    // JUMLAH PRODUK YANG TERLIHAT
+    // =============================================
+
+    function getShopVisibleCards() {
+
+        /*
+        MOBILE
+        0 - 767px
+        */
+
+        if (window.innerWidth < 768) {
+            return 1;
+        }
+
+
+        /*
+        TABLET / LAPTOP KECIL
+        768 - 1279px
+        */
+
+        if (window.innerWidth < 1280) {
+            return 2;
+        }
+
+
+        /*
+        DESKTOP
+        1280px ke atas
+        */
+
+        return 3;
+    }
+
+
+
+    // =============================================
+    // HITUNG LEBAR SATU PERGESERAN
     // =============================================
 
     function getShopSlideWidth() {
@@ -46,11 +77,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const cardWidth =
             shopCards[0].getBoundingClientRect().width;
 
+
         const trackStyle =
             window.getComputedStyle(shopTrack);
 
+
         const gap =
-            parseFloat(trackStyle.columnGap) || 40;
+            parseFloat(trackStyle.columnGap) || 0;
 
 
         return cardWidth + gap;
@@ -59,10 +92,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // =============================================
-    // UPDATE POSISI SLIDER
+    // MAXIMUM INDEX
+    // =============================================
+
+    function getShopMaxIndex() {
+
+        const visibleCards =
+            getShopVisibleCards();
+
+
+        return Math.max(
+            0,
+            shopCards.length - visibleCards
+        );
+    }
+
+
+
+    // =============================================
+    // UPDATE SLIDER
     // =============================================
 
     function updateShopSlider() {
+
+        const maxIndex =
+            getShopMaxIndex();
+
+
+        /*
+        Jika resize dari mobile ke desktop,
+        index mungkin sudah terlalu jauh.
+        */
+
+        if (shopCurrentIndex > maxIndex) {
+            shopCurrentIndex = maxIndex;
+        }
+
 
         const slideWidth =
             getShopSlideWidth();
@@ -83,16 +148,18 @@ document.addEventListener('DOMContentLoaded', function () {
         function () {
 
             const maxIndex =
-                shopCards.length - shopVisibleCards;
+                getShopMaxIndex();
 
 
             shopCurrentIndex++;
 
 
-            // Jika sudah mencapai akhir,
-            // kembali ke produk pertama
-            if (shopCurrentIndex > maxIndex) {
+            /*
+            Jika sudah mentok kanan,
+            kembali ke awal.
+            */
 
+            if (shopCurrentIndex > maxIndex) {
                 shopCurrentIndex = 0;
             }
 
@@ -113,16 +180,18 @@ document.addEventListener('DOMContentLoaded', function () {
         function () {
 
             const maxIndex =
-                shopCards.length - shopVisibleCards;
+                getShopMaxIndex();
 
 
             shopCurrentIndex--;
 
 
-            // Jika mundur dari produk pertama,
-            // langsung menuju posisi terakhir
-            if (shopCurrentIndex < 0) {
+            /*
+            Dari produk pertama,
+            langsung ke posisi terakhir.
+            */
 
+            if (shopCurrentIndex < 0) {
                 shopCurrentIndex = maxIndex;
             }
 
@@ -146,5 +215,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
     );
+
+
+
+    // =============================================
+    // INITIAL
+    // =============================================
+
+    updateShopSlider();
 
 });
