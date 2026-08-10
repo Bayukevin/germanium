@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="w-full max-w-[1920px] mx-auto">
+<body class="bg-[#151713] overflow-x-hidden">
+    <div class="w-full max-w-[1920px] mx-auto overflow-x-clip">
         <nav class="relative bg-[#22201B] after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
             <div class="mx-auto px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
@@ -23,39 +23,39 @@
             </div>
         </nav>
     
-        <section class="hero">
-            <div class="hero-mobile flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/hero-mobile.png" alt="hero">
+        <section class="hero relative overflow-hidden">
+            <div class="hero-mobile flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/hero-mobile.png" alt="hero">
             </div>
-            <div class="hidden sm:flex flex-col">
-                <img class="absolute" src="assets/hero.png" alt="background">
-                <div class="relative grid grid-cols-12 px-[130px] h-[1800px] top-20">
+            <div class="hidden xl:flex flex-col">
+                <img class="absolute inset-0 w-full h-full object-cover object-center" src="assets/hero.png" alt="background">
+                <div class="relative grid grid-cols-12 px-[70px] 2xl:px-[130px] h-[1200px] 2xl:h-[1800px] top-12 2xl:top-20">
                     <div class="col-span-12 md:col-span-6 md:col-start-7 text-white text-right flex flex-col">
                         <div class="flex justify-center mb-30">
                             <img src="assets/logo.png" alt="logo">
                         </div>
-                        <h2 class="coneria text-[100px] leading-tight">
+                        <h2 class="coneria text-[72px] 2xl:text-[100px] leading-tight">
                             Wear the energy, <br>
                             Elevate your day
                         </h2>
     
-                        <h3 class="mt-4 text-[56px] inter-bold-italic">
+                        <h3 class="mt-4 text-[40px] 2xl:text-[56px] inter-bold-italic">
                             Bukan Sekadar Pendant!
                         </h3>
     
-                        <p class="mt-4 text-[30px] inter mt-20">
+                        <p class="text-[22px] 2xl:text-[30px] inter mt-12 2xl:mt-20">
                             <span class="font-bold">Cara Baru Menjaga Keseimbangan Setiap Hari!</span> <br> 
                             Germanium Pendant memadukan keindahan aksesori <br>
                             premium dengan material germanium yang dirancang <br>
                             untuk mendukung kenyamanan, vitalitas, dan gaya <br>
                             hidup aktif Anda.
                         </p>
-                        <p class="mt-4 text-[30px] inter">
+                        <p class="mt-4 text-[22px] 2xl:text-[30px] inter">
                             Dikenakan dengan mudah.<br>
                             Terlihat elegan. Menemani setiap aktivitas.
                         </p>
                     </div>
-                    <div class="col-span-12 md:col-span-6 md:col-start-7 text-white text-right inter text-[50px] absolute bottom-70 w-full">
+                    <div class="col-span-12 md:col-span-6 md:col-start-7 text-white text-right inter text-[34px] 2xl:text-[50px] absolute bottom-40 2xl:bottom-70 w-full">
                         <h2>
                             Tersedia desain premium <br>
                             untuk pria dan wanita.
@@ -65,37 +65,37 @@
             </div>
         </section>
 
-        <div class="pemisah absolute w-full max-w-[1920px] hidden sm:flex flex-col">
+        <div class="pemisah absolute w-full max-w-[1920px] hidden xl:flex flex-col">
         </div>
 
         <section class="section-2">
-            <img class="hidden sm:flex flex-col" src="assets/section-2.png" alt="">
-            <div class="flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/section-1-mobile.png" alt="">
+            <img class="hidden xl:block w-full h-auto" src="assets/section-2.png" alt="">
+            <div class="flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/section-1-mobile.png" alt="">
             </div>
-            <div class="flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/section-2-mobile.png" alt="">
+            <div class="flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/section-2-mobile.png" alt="">
             </div>
         </section>
 
         <section class="section-3">
-            <img class="hidden sm:flex flex-col" src="assets/section-3.png" alt="">
-            <div class="flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/section-3-mobile.png" alt="">
+            <img class="hidden xl:block w-full h-auto" src="assets/section-3.png" alt="">
+            <div class="flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/section-3-mobile.png" alt="">
             </div>
         </section>
 
-        <div class="section-4-mob flex justify-center sm:hidden bg-black">
-            <img src="assets/mobile/section-4-mobile.png" alt="">
+        <div class="section-4-mob flex justify-center xl:hidden bg-black">
+            <img class="w-full h-auto block" src="assets/mobile/section-4-mobile.png" alt="">
         </div>
-        <section class="section-4 h-[1020px] hidden sm:flex flex-col">
-            <img class="absolute" src="assets/section-4.png" alt="">
+        <section class="section-4 relative hidden xl:flex flex-col xl:min-h-[1450px] 2xl:min-h-0 2xl:h-[1020px] overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover object-center" src="assets/section-4.png" alt="">
             <div class="relative py-20">
                 <div class="text-white text-center">
-                    <h3 class="inter text-[35px]">MHY CHOOSE</h3>
-                    <h1 class="coneria text-[120px]">Germanium Pendant?</h1>
+                    <h3 class="inter text-[28px] 2xl:text-[35px]">MHY CHOOSE</h3>
+                    <h1 class="coneria text-[84px] 2xl:text-[120px]">Germanium Pendant?</h1>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-x-20 gap-y-16 w-full max-w-[1800px] mx-auto mt-15">
+                <div class="grid grid-cols-2 2xl:grid-cols-4 gap-x-12 2xl:gap-x-20 gap-y-16 w-full max-w-[1100px] 2xl:max-w-[1800px] mx-auto mt-15 px-12 2xl:px-0">
                     <!-- CARD 1 -->
                     <div class="cover-card w-full flex justify-center min-w-0">
                         <div class="relative w-full max-w-[360px]">
@@ -234,9 +234,9 @@
         </section>
 
         <section class="section-5">
-            <img class="hidden sm:flex flex-col" src="assets/section-5.png" alt="">
-            <div class="flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/section-5-mobile.png" alt="">
+            <img class="hidden xl:block w-full h-auto" src="assets/section-5.png" alt="">
+            <div class="flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/section-5-mobile.png" alt="">
             </div>
         </section>
 
@@ -257,7 +257,8 @@
                 inter
                 text-[18px]
                 sm:text-[22px]
-                md:text-[32px]
+                md:text-[26px]
+                xl:text-[32px]
             "
         >
             PENELITIAN DAN TEMUAN
@@ -268,7 +269,8 @@
                 coneria
                 text-[45px]
                 sm:text-[55px]
-                md:text-[85px]
+                md:text-[65px]
+                xl:text-[85px]
                 leading-tight
             "
         >
@@ -279,6 +281,7 @@
         <!-- SLIDER AREA -->
         <div
             class="
+                article-slider-shell
                 flex
                 items-center
                 justify-center
@@ -854,6 +857,7 @@
             <button
                 type="button"
                 id="closeArticleModal"
+                aria-label="Tutup artikel"
                 class="
                     absolute
                     top-6
@@ -881,6 +885,7 @@
             <button
                 type="button"
                 id="modalPrev"
+                aria-label="Artikel sebelumnya"
                 class="
                     absolute
                     left-5
@@ -962,6 +967,7 @@
             <button
                 type="button"
                 id="modalNext"
+                aria-label="Artikel berikutnya"
                 class="
                     absolute
                     right-5
@@ -988,27 +994,27 @@
 
         </div>
         <section class="section-7 relative">
-            <img class="hidden sm:flex flex-col" src="assets/section-7.png" alt="">
-            <div class="flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/section-7-mobile.png" alt="">
+            <img class="hidden xl:block w-full h-auto" src="assets/section-7.png" alt="">
+            <div class="flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/section-7-mobile.png" alt="">
             </div>
         </section>
         <section class="section-8">
-            <img class="hidden sm:flex flex-col" src="assets/section-8.png" alt="">
-            <div class="flex justify-center sm:hidden bg-black">
-                <img src="assets/mobile/section-8-mobile.png" alt="">
+            <img class="hidden xl:block w-full h-auto" src="assets/section-8.png" alt="">
+            <div class="flex justify-center xl:hidden bg-black">
+                <img class="w-full h-auto block" src="assets/mobile/section-8-mobile.png" alt="">
             </div>
         </section>
 
-        <div class="flex justify-center sm:hidden bg-black">
-            <img src="assets/mobile/section-9-mobile.png" alt="">
+        <div class="flex justify-center xl:hidden bg-black">
+            <img class="w-full h-auto block" src="assets/mobile/section-9-mobile.png" alt="">
         </div>
-        <section class="section-9 hidden sm:flex flex-col">
-            <img class="absolute" src="assets/section-9.png" alt="">
-            <div class="relative grid grid-cols-12 h-360 items-center px-20">
-                <div class="col-span-8">
+        <section class="section-9 relative hidden xl:flex flex-col xl:min-h-[1050px] 2xl:min-h-0 2xl:h-360 overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover object-center" src="assets/section-9.png" alt="">
+            <div class="relative grid grid-cols-12 flex-1 items-center px-10 2xl:px-20 py-16 2xl:py-0">
+                <div class="col-span-8 pr-8 2xl:pr-0">
                     <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-3 bg-[#D9D9D9] p-8 flex justify-center">
+                        <div class="col-span-3 bg-[#D9D9D9] p-5 2xl:p-8 flex justify-center">
                             <img
                                 src="assets/artis-1.png"
                                 alt="images"
@@ -1016,7 +1022,7 @@
                             >
                         </div>
     
-                        <div class="col-span-3 bg-[#D9D9D9] p-8 flex justify-center">
+                        <div class="col-span-3 bg-[#D9D9D9] p-5 2xl:p-8 flex justify-center">
                             <img
                                 src="assets/artis-2.png"
                                 alt="images"
@@ -1024,7 +1030,7 @@
                             >
                         </div>
     
-                        <div class="col-span-2 bg-[#D9D9D9] p-8 flex justify-center">
+                        <div class="col-span-2 bg-[#D9D9D9] p-5 2xl:p-8 flex justify-center">
                             <img
                                 src="assets/artis-3.png"
                                 alt="images"
@@ -1032,7 +1038,7 @@
                             >
                         </div>
     
-                        <div class="col-span-2 bg-[#D9D9D9] p-8 flex justify-center">
+                        <div class="col-span-2 bg-[#D9D9D9] p-5 2xl:p-8 flex justify-center">
                             <img
                                 src="assets/artis-4.png"
                                 alt="images"
@@ -1040,7 +1046,7 @@
                             >
                         </div>
     
-                        <div class="col-span-2 bg-[#D9D9D9] p-8 flex justify-center">
+                        <div class="col-span-2 bg-[#D9D9D9] p-5 2xl:p-8 flex justify-center">
                             <img
                                 src="assets/artis-5.png"
                                 alt="images"
@@ -1052,13 +1058,13 @@
                 </div>
                 <div class="col-span-4 text-white flex items-center justify-center">
                     <div class="">
-                        <h2 class="coneria text-[100px]">Tampil <br>lebih <br>berkelas!</h2>
-                        <p class="inter text-[35px]">Germanium Pendant telah <br><span class="inter-bold-italic text-[45px]">dipercaya lebih dari <br>783.325 orang</span> <br>sejak 2010.</p>
+                        <h2 class="coneria text-[68px] 2xl:text-[100px] leading-tight">Tampil <br>lebih <br>berkelas!</h2>
+                        <p class="inter text-[24px] 2xl:text-[35px]">Germanium Pendant telah <br><span class="inter-bold-italic text-[32px] 2xl:text-[45px]">dipercaya lebih dari <br>783.325 orang</span> <br>sejak 2010.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-10 relative z-[5] py-12 md:py-16 xl:py-20">
+        <section class="section-10 relative z-[5] py-12 md:py-16 xl:py-20 bg-[#23211B] xl:bg-transparent">
 
             <!-- BACKGROUND GRADIENT ANDA -->
             <div
@@ -1071,8 +1077,6 @@
                     w-full
                     -z-[1]
                     pointer-events-none
-                    h-400
-
                     bg-[linear-gradient(to_bottom,rgba(35,33,27,0)_0%,rgba(35,33,27,0.45)_12%,#23211B_25%,#23211B_85%,rgba(35,33,27,0.45)_88%,rgba(35,33,27,0)_100%)]
                 "
             ></div>
@@ -1100,6 +1104,7 @@
                 <!-- SLIDER WRAPPER -->
                 <div
                     class="
+                        shop-slider-shell
                         flex
                         items-center
                         justify-center
@@ -1746,13 +1751,13 @@
 
             <div class="absolute inset-0 bg-black/20"></div>
 
-            <div class="relative text-white text-center py-20 z-[6]">
+            <div class="relative text-white text-center py-12 sm:py-16 xl:py-20 z-[6]">
 
-                <h1 class="inter-extrabold text-[115px] leading-none">
+                <h1 class="inter-extrabold text-[64px] sm:text-[82px] xl:text-[115px] leading-none">
                     FAQ
                 </h1>
 
-                <p class="inter text-[40px] mt-3">
+                <p class="inter text-[18px] sm:text-[24px] xl:text-[40px] mt-3 px-4">
                     ( Frequently Asked Question )
                 </p>
 
@@ -1763,8 +1768,12 @@
                         md:grid-cols-2
                         xl:grid-cols-3
                         gap-x-10
-                        gap-y-14
-                        mt-20
+                        gap-y-10
+                        sm:gap-y-12
+                        xl:gap-y-14
+                        mt-10
+                        sm:mt-14
+                        xl:mt-20
                         px-6
                         md:px-16
                         xl:px-30
@@ -2591,7 +2600,7 @@
         </section>
 
         <footer class="bg-white text-center relative py-4">
-            <p class="text-[#315EB3] font-semibold">© Copyright PT Millionaire Club Indonesia. All Rights Reserved</p>
+            <p class="text-[#315EB3] font-semibold text-[12px] sm:text-[14px] px-4">© Copyright PT Millionaire Club Indonesia. All Rights Reserved</p>
         </footer>
     </div>
 
