@@ -1037,3 +1037,7 @@ footer p {
     }
 
 }
+
+.lang-hidden {
+    display: none !important;
+}

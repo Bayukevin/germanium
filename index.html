@@ -15,7 +15,11 @@
             <div class="mx-auto px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:ml-6 sm:pr-0">
-                    <button type="button" class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                    <button 
+                        id="languageToggle"
+                        type="button" 
+                        class="relative rounded-full p-1 text-gray-400 hover:text-white cursor-pointer"
+                    >
                         IND
                     </button>
                 </div>
@@ -25,10 +29,12 @@
     
         <section class="hero relative overflow-hidden">
             <div class="hero-mobile flex justify-center xl:hidden bg-black">
-                <img class="w-full h-auto block" src="assets/mobile/hero-mobile.webp" alt="hero">
+                <img class="id w-full h-auto block" src="assets/mobile/hero-mobile.webp" alt="hero">
+                <img class="en w-full h-auto block" src="assets/mobile/en/hero-mobile.webp" alt="hero">
             </div>
             <div class="hidden xl:flex flex-col">
-                <img class="absolute inset-0 w-full h-full object-cover object-center" src="assets/hero.webp" alt="background">
+                <img class="in absolute inset-0 w-full h-full object-cover object-center" src="assets/hero.webp" alt="background">
+                <img class="en absolute inset-0 w-full h-full object-cover object-center" src="assets/en/hero.webp" alt="background">
                 <div class="relative grid grid-cols-12 px-[70px] 2xl:px-[130px] h-[1200px] 2xl:h-[1800px] top-12 2xl:top-20">
                     <div class="col-span-12 md:col-span-6 md:col-start-7 text-white text-right flex flex-col">
                         <div class="flex justify-center mb-30">
@@ -39,26 +45,43 @@
                             Elevate your day
                         </h2>
     
-                        <h3 class="mt-4 text-[40px] 2xl:text-[56px] inter-bold-italic">
+                        <h3 class="id mt-4 text-[40px] 2xl:text-[56px] inter-bold-italic">
                             Bukan Sekadar Pendant!
                         </h3>
+                        <h3 class="en mt-4 text-[40px] 2xl:text-[56px] inter-bold-italic">
+                            Not Just a Pendant!
+                        </h3>
     
-                        <p class="text-[22px] 2xl:text-[30px] inter mt-12 2xl:mt-20">
+                        <p class="id text-[22px] 2xl:text-[30px] inter mt-12 2xl:mt-20">
                             <span class="font-bold">Cara Baru Menjaga Keseimbangan Setiap Hari!</span> <br> 
                             Germanium Pendant memadukan keindahan aksesori <br>
                             premium dengan material germanium yang dirancang <br>
                             untuk mendukung kenyamanan, vitalitas, dan gaya <br>
                             hidup aktif Anda.
                         </p>
-                        <p class="mt-4 text-[22px] 2xl:text-[30px] inter">
+                        <p class="en text-[22px] 2xl:text-[30px] inter mt-12 2xl:mt-20">
+                            <span class="font-bold">A New Way to Maintain Balance Every Day!</span> <br> 
+                            The Germanium Pendant combines the beauty of a<br>
+                            premium accessory with germanium, designed to<br>
+                            support your comfort, vitality and active lifestyle.
+                        </p>
+                        <p class="id mt-4 text-[22px] 2xl:text-[30px] inter">
                             Dikenakan dengan mudah.<br>
                             Terlihat elegan. Menemani setiap aktivitas.
                         </p>
+                        <p class="en mt-4 text-[22px] 2xl:text-[30px] inter">
+                            Easy to wear.<br>
+                            Looks elegant. Accompanies you in every activity.
+                        </p>
                     </div>
                     <div class="col-span-12 md:col-span-6 md:col-start-7 text-white text-right inter text-[34px] 2xl:text-[50px] absolute bottom-40 2xl:bottom-70 w-full">
-                        <h2>
+                        <h2 class="id">
                             Tersedia desain premium <br>
                             untuk pria dan wanita.
+                        </h2>
+                        <h2 class="en">
+                            Premium designs are available for <br>
+                            men and women.
                         </h2>
                     </div>
                 </div>
@@ -70,14 +93,17 @@
 
         <section class="section-2 relative">
             <div class="pemisah absolute -top-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
-            <img class="hidden xl:block w-full h-auto" src="assets/section-2.webp" alt="">
+            <img class="id hidden xl:block w-full h-auto" src="assets/section-2.webp" alt="">
+            <img class="en hidden xl:block w-full h-auto" src="assets/en/section-2.webp" alt="">
 
             <div class="flex justify-center xl:hidden bg-black relative">
-                <img class="w-full h-auto block" src="assets/mobile/section-1-mobile.webp" alt="">
+                <img class="id w-full h-auto block" src="assets/mobile/section-1-mobile.webp" alt="">
+                <img class="en w-full h-auto block" src="assets/mobile/en/section-1-mobile.webp" alt="">
                 <div class="pemisah-mobile pemisah-black absolute -bottom-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
             </div>
             <div class="flex justify-center xl:hidden bg-black relative">
-                <img class="w-full h-auto block" src="assets/mobile/section-2-mobile.webp" alt="">
+                <img class="id w-full h-auto block" src="assets/mobile/section-2-mobile.webp" alt="">
+                <img class="en w-full h-auto block" src="assets/mobile/en/section-2-mobile.webp" alt="">
                 <div class="pemisah-mobile pemisah absolute -bottom-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
             </div>
             <div class="pemisah absolute -bottom-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
@@ -88,9 +114,11 @@
 
         <section class="section-3 relative">
             
-            <img class="hidden xl:block w-full h-auto" src="assets/section-3.webp" alt="">
+            <img class="id hidden xl:block w-full h-auto" src="assets/section-3.webp" alt="">
+            <img class="en hidden xl:block w-full h-auto" src="assets/en/section-3.webp" alt="">
             <div class="flex justify-center xl:hidden bg-black relative">
-                <img class="w-full h-auto block" src="assets/mobile/section-3-mobile.webp" alt="">
+                <img class="id w-full h-auto block" src="assets/mobile/section-3-mobile.webp" alt="">
+                <img class="en w-full h-auto block" src="assets/mobile/en/section-3-mobile.webp" alt="">
                 <div class="pemisah-mobile pemisah absolute -bottom-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
             </div>
             <div class="pemisah absolute -bottom-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
@@ -100,14 +128,15 @@
         </div> -->
 
         <div class="section-4-mob flex justify-center xl:hidden bg-black relative">
-            <img class="w-full h-auto block" src="assets/mobile/section-4-mobile.webp" alt="">
+            <img class="id w-full h-auto block" src="assets/mobile/section-4-mobile.webp" alt="">
+            <img class="en w-full h-auto block" src="assets/mobile/en/section-4-mobile.webp" alt="">
             <div class="pemisah-mobile pemisah-black absolute -bottom-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
         </div>
         <section class="section-4 relative hidden xl:flex flex-col xl:min-h-[1450px] 2xl:min-h-0 2xl:h-[1020px] overflow-hidden">
             <img class="absolute inset-0 w-full h-full object-cover object-center" src="assets/section-4.webp" alt="">
             <div class="relative py-20">
                 <div class="text-white text-center">
-                    <h3 class="inter text-[28px] 2xl:text-[35px]">MHY CHOOSE</h3>
+                    <h3 class="inter text-[28px] 2xl:text-[35px]">WHY CHOOSE</h3>
                     <h1 class="coneria text-[84px] 2xl:text-[120px]">Germanium Pendant?</h1>
                 </div>
                 <div class="grid grid-cols-2 2xl:grid-cols-4 gap-x-12 2xl:gap-x-20 gap-y-16 w-full max-w-[1100px] 2xl:max-w-[1800px] mx-auto mt-15 px-12 2xl:px-0">
@@ -127,14 +156,20 @@
 
                                 <div class="glass-card min-h-[445px] w-full flex text-white p-5">
                                     <div class="mt-auto">
-                                        <p class="inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                        <p class="id inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
                                             Wellness Tanpa Mengubah Rutinitas
                                         </p>
+                                        <p class="en inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            Wellness Without Changing Your Routine
+                                        </p>
 
-                                        <p class="inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                        <p class="id inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
                                             Tidak membutuhkan waktu khusus.
                                             Cukup dikenakan sebagai bagian dari
                                             penampilan sehari-hari.
+                                        </p>
+                                        <p class="en inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            It doesn’t take any special time. Simply wear it as part of your everyday look.
                                         </p>
                                     </div>
                                 </div>
@@ -150,7 +185,7 @@
 
                             <!-- ICON -->
                             <div class="glass-icon rounded-full w-max absolute -left-12 top-[-20px] z-[3]">
-                                <img class="w-[130px] p-4" src="assets/icon-1.webp" alt="">
+                                <img class="w-[130px] p-4" src="assets/icon-2.webp" alt="">
                             </div>
 
                             <!-- CARD -->
@@ -160,14 +195,18 @@
 
                                 <div class="glass-card min-h-[445px] w-full flex text-white p-5">
                                     <div class="mt-auto">
-                                        <p class="inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
-                                            Wellness Tanpa Mengubah Rutinitas
+                                        <p class="id inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            Satu Produk, Dua Nilai
+                                        </p>
+                                        <p class="en inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            One Product, Two Values
                                         </p>
 
-                                        <p class="inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
-                                            Tidak membutuhkan waktu khusus.
-                                            Cukup dikenakan sebagai bagian dari
-                                            penampilan sehari-hari.
+                                        <p class="id inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            Mendapatkan aksesori premium sekaligus produk wearable wellness.
+                                        </p>
+                                        <p class="en inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            Get premium accessories as well as wearable wellness products.
                                         </p>
                                     </div>
                                 </div>
@@ -183,7 +222,7 @@
 
                             <!-- ICON -->
                             <div class="glass-icon rounded-full w-max absolute -left-12 top-[-20px] z-[3]">
-                                <img class="w-[130px] p-4" src="assets/icon-1.webp" alt="">
+                                <img class="w-[130px] p-4" src="assets/icon-3.webp" alt="">
                             </div>
 
                             <!-- CARD -->
@@ -193,14 +232,18 @@
 
                                 <div class="glass-card min-h-[445px] w-full flex text-white p-5">
                                     <div class="mt-auto">
-                                        <p class="inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
-                                            Wellness Tanpa Mengubah Rutinitas
+                                        <p class="id inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            Cocok untuk Pria dan Wanita
+                                        </p>
+                                        <p class="en inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            Suitable for men and women
                                         </p>
 
-                                        <p class="inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
-                                            Tidak membutuhkan waktu khusus.
-                                            Cukup dikenakan sebagai bagian dari
-                                            penampilan sehari-hari.
+                                        <p class="id inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            Pilihan desain beragam untuk gaya klasik, modern, elegan, maupun statement.
+                                        </p>
+                                        <p class="en inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            A wide range of designs to suit classic, modern, elegant or statement styles.
                                         </p>
                                     </div>
                                 </div>
@@ -216,7 +259,7 @@
 
                             <!-- ICON -->
                             <div class="glass-icon rounded-full w-max absolute -left-12 top-[-20px] z-[3]">
-                                <img class="w-[130px] p-4" src="assets/icon-1.webp" alt="">
+                                <img class="w-[130px] p-4" src="assets/icon-4.webp" alt="">
                             </div>
 
                             <!-- CARD -->
@@ -226,14 +269,18 @@
 
                                 <div class="glass-card min-h-[445px] w-full flex text-white p-5">
                                     <div class="mt-auto">
-                                        <p class="inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
-                                            Wellness Tanpa Mengubah Rutinitas
+                                        <p class="id inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            Pilihan Hadiah yang Lebih Bermakna
+                                        </p>
+                                        <p class="en inter-bold-italic text-[30px] xl:text-[35px] leading-[1.1]">
+                                            More Meaningful Gift Options
                                         </p>
 
-                                        <p class="inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
-                                            Tidak membutuhkan waktu khusus.
-                                            Cukup dikenakan sebagai bagian dari
-                                            penampilan sehari-hari.
+                                        <p class="id inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            Bukan hanya indah secara visual, tetapi juga membawa pesan perhatian terhadap kesehatan dan kenyamanan orang terdekat.
+                                        </p>
+                                        <p class="en inter text-[20px] xl:text-[25px] leading-[1.25] mt-3">
+                                            Not only is it visually appealing, but it also conveys a message of care for the health and comfort of those closest to you.
                                         </p>
                                     </div>
                                 </div>
@@ -254,9 +301,11 @@
 
         <section class="section-5 relative">
             <div class="pemisah-black absolute -top-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
-            <img class="hidden xl:block w-full h-auto" src="assets/section-5.webp" alt="">
+            <img class="id hidden xl:block w-full h-auto" src="assets/section-5.webp" alt="">
+            <img class="en hidden xl:block w-full h-auto" src="assets/en/section-5.webp" alt="">
             <div class="flex justify-center xl:hidden bg-black">
-                <img class="w-full h-auto block" src="assets/mobile/section-5-mobile.webp" alt="">
+                <img class="id w-full h-auto block" src="assets/mobile/section-5-mobile.webp" alt="">
+                <img class="en w-full h-auto block" src="assets/mobile/en/section-5-mobile.webp" alt="">
             </div>
             <div class="pemisah-black absolute -bottom-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
         </section>
@@ -278,6 +327,7 @@
                 <!-- TITLE -->
                 <h3
                     class="
+                        id
                         inter
                         text-[18px]
                         sm:text-[22px]
@@ -286,6 +336,18 @@
                     "
                 >
                     PENELITIAN DAN TEMUAN
+                </h3>
+                <h3
+                    class="
+                        en
+                        inter
+                        text-[18px]
+                        sm:text-[22px]
+                        md:text-[26px]
+                        xl:text-[32px]
+                    "
+                >
+                    RESEARCH AND FINDINGS
                 </h3>
 
                 <h1
@@ -405,7 +467,6 @@
                                 <div
                                     class="
                                         relative
-
                                         w-[210px]
                                         sm:w-[240px]
                                         md:w-80
@@ -475,6 +536,7 @@
 
                                     <p
                                         class="
+                                            id
                                             inter
                                             text-[13px]
                                             sm:text-[14px]
@@ -492,6 +554,27 @@
                                         <br>
 
                                         termasuk dalam bentuk pendant.
+                                    </p>
+                                    <p
+                                        class="
+                                            en
+                                            inter
+                                            text-[13px]
+                                            sm:text-[14px]
+                                            md:text-[16px]
+                                            leading-relaxed
+                                        "
+                                    >
+                                        A national journal article examines
+                                        <br>
+
+                                        <span class="font-bold">
+                                            germanium as a therapeutic material,
+                                        </span>
+
+                                        <br>
+
+                                        including in the form of a pendant.
                                     </p>
 
                                 </div>
@@ -585,6 +668,7 @@
 
                                     <p
                                         class="
+                                            id
                                             inter
                                             text-[13px]
                                             sm:text-[14px]
@@ -592,23 +676,32 @@
                                             leading-relaxed
                                         "
                                     >
-                                        Publikasi artikel kedua membahas
+                                        Artikel internasional mengenai 
                                         <br>
-
                                         <span class="font-bold">
-                                            pemanfaatan Germanium,
+                                            kemampuan Germanium dalam meningkatkan <br>metabolisme tubuh & aliran darah.
                                         </span>
-
+                                    </p>
+                                    <p
+                                        class="
+                                            en
+                                            inter
+                                            text-[13px]
+                                            sm:text-[14px]
+                                            md:text-[16px]
+                                            leading-relaxed
+                                        "
+                                    >
+                                        An international article on
                                         <br>
-
-                                        dalam pengembangan material kesehatan.
+                                        <span class="font-bold">
+                                            germanium's ability to boost the body's <br> metabolism and blood flow.
+                                        </span>
                                     </p>
 
                                 </div>
 
                             </div>
-
-
 
                             <!-- ============================
                                 ARTIKEL 3
@@ -695,6 +788,7 @@
 
                                     <p
                                         class="
+                                            id
                                             inter
                                             text-[13px]
                                             sm:text-[14px]
@@ -702,23 +796,34 @@
                                             leading-relaxed
                                         "
                                     >
-                                        Penelitian lain menjelaskan
+                                        Publikasi artikel internasional mengkaji
                                         <br>
 
                                         <span class="font-bold">
-                                            karakteristik Batu Germanium,
+                                            kemampuan Germanium menghantarkan ion negatif dan FIR
                                         </span>
-
+                                    </p>
+                                    <p
+                                        class="
+                                            en
+                                            inter
+                                            text-[13px]
+                                            sm:text-[14px]
+                                            md:text-[16px]
+                                            leading-relaxed
+                                        "
+                                    >
+                                        An international article examines germanium's ability to conduct
                                         <br>
 
-                                        serta potensi aplikasinya.
+                                        <span class="font-bold">
+                                            negative ions and far-infrared (FIR) radiation
+                                        </span>
                                     </p>
 
                                 </div>
 
                             </div>
-
-
 
                             <!-- ============================
                                 ARTIKEL 4
@@ -805,6 +910,7 @@
 
                                     <p
                                         class="
+                                            id
                                             inter
                                             text-[13px]
                                             sm:text-[14px]
@@ -812,16 +918,29 @@
                                             leading-relaxed
                                         "
                                     >
-                                        Publikasi selanjutnya mengulas
+                                        Publikasi artikel nasional mengkaji 
                                         <br>
 
                                         <span class="font-bold">
-                                            penggunaan Germanium,
+                                            kemampuan Germanium untuk membentu <br> melindungi sel tubuh dari bahaya <br> radiasi elektromagnetik
                                         </span>
-
+                                    </p>
+                                    <p
+                                        class="
+                                            en
+                                            inter
+                                            text-[13px]
+                                            sm:text-[14px]
+                                            md:text-[16px]
+                                            leading-relaxed
+                                        "
+                                    >
+                                        A national journal article examines the 
                                         <br>
 
-                                        dalam berbagai produk kesehatan.
+                                        <span class="font-bold">
+                                            ability of germanium to help protect <br> the body's cells from the harmful <br> effects of electromagnetic radiation
+                                        </span>
                                     </p>
 
                                 </div>
@@ -1026,10 +1145,12 @@
         <section class="section-7 relative">
             <div class="pemisah absolute -top-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
 
-            <img class="hidden xl:block w-full h-auto" src="assets/section-7.webp" alt="">
+            <img class="id hidden xl:block w-full h-auto" src="assets/section-7.webp" alt="">
+            <img class="en hidden xl:block w-full h-auto" src="assets/en/section-7.webp" alt="">
             <div class="flex justify-center xl:hidden bg-black">
                 <div class="pemisah-mobile pemisah-black absolute -top-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
-                <img class="w-full h-auto block" src="assets/mobile/section-7-mobile.webp" alt="">
+                <img class="id w-full h-auto block" src="assets/mobile/section-7-mobile.webp" alt="">
+                <img class="en w-full h-auto block" src="assets/mobile/en/section-7-mobile.webp" alt="">
             </div>
             <div class="pemisah absolute -bottom-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
         </section>
@@ -1038,9 +1159,11 @@
         </div> -->
 
         <section class="section-8 relative">
-            <img class="hidden xl:block w-full h-auto" src="assets/section-8.webp" alt="">
+            <img class="id hidden xl:block w-full h-auto" src="assets/section-8.webp" alt="">
+            <img class="en hidden xl:block w-full h-auto" src="assets/en/section-8.webp" alt="">
             <div class="flex justify-center xl:hidden bg-black relative">
-                <img class="w-full h-auto block" src="assets/mobile/section-8-mobile.webp" alt="">
+                <img class="id w-full h-auto block" src="assets/mobile/section-8-mobile.webp" alt="">
+                <img class="en w-full h-auto block" src="assets/mobile/en/section-8-mobile.webp" alt="">
                 <div class="pemisah-mobile pemisah absolute -bottom-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
             </div>
             <div class="pemisah absolute -bottom-25 w-full max-w-[1920px] hidden xl:flex flex-col z-[5]"></div>
@@ -1052,7 +1175,8 @@
 
         <div class="flex justify-center xl:hidden bg-black relative">
             <div class="pemisah-mobile pemisah absolute -top-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
-            <img class="w-full h-auto block" src="assets/mobile/section-9-mobile.webp" alt="">
+            <img class="id w-full h-auto block" src="assets/mobile/section-9-mobile.webp" alt="">
+            <img class="en w-full h-auto block" src="assets/mobile/en/section-9-mobile.webp" alt="">
             <div class="pemisah-mobile pemisah absolute -bottom-25 w-full max-w-[1920px] 2xl:hidden flex flex-col"></div>
         </div>
         <section class="section-9 relative hidden xl:flex flex-col xl:min-h-[1050px] 2xl:min-h-0 2xl:h-360 overflow-hidden">
@@ -1104,8 +1228,10 @@
                 </div>
                 <div class="col-span-4 text-white flex items-center justify-center">
                     <div class="">
-                        <h2 class="coneria text-[68px] 2xl:text-[100px] leading-tight">Tampil <br>lebih <br>berkelas!</h2>
-                        <p class="inter text-[24px] 2xl:text-[35px]">Germanium Pendant telah <br><span class="inter-bold-italic text-[32px] 2xl:text-[45px]">dipercaya lebih dari <br>783.325 orang</span> <br>sejak 2010.</p>
+                        <h2 class="id coneria text-[68px] 2xl:text-[100px] leading-tight">Tampil <br>lebih <br>berkelas!</h2>
+                        <h2 class="en coneria text-[68px] 2xl:text-[100px] leading-tight">Appear <br>more <br>dassy!</h2>
+                        <p class="id inter text-[24px] 2xl:text-[35px]">Germanium Pendant telah <br><span class="inter-bold-italic text-[32px] 2xl:text-[45px]">dipercaya lebih dari <br>783.325 orang</span> <br>sejak 2010.</p>
+                        <p class="en inter text-[24px] 2xl:text-[35px]">The Germanium Pendant <br><span class="inter-bold-italic text-[32px] 2xl:text-[45px]">has been trusted for more than <br>783.325 user</span> <br>since 2010.</p>
                     </div>
                 </div>
             </div>
@@ -1133,6 +1259,7 @@
                 <!-- TITLE -->
                 <h2
                     class="
+                        id
                         text-white
                         inter-extrabold
                         text-[20px]
@@ -1144,6 +1271,21 @@
                     "
                 >
                     PILIH SERIES DESAIN FAVORIT ANDA
+                </h2>
+                <h2
+                    class="
+                        en
+                        text-white
+                        inter-extrabold
+                        text-[20px]
+                        sm:text-[24px]
+                        md:text-[30px]
+                        xl:text-[40px]
+                        text-center
+                        px-5
+                    "
+                >
+                    CHOOSE YOUR GAVOURITE DESIGN SERIES
                 </h2>
 
 
@@ -1850,9 +1992,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Bagaimana cara untuk merawat Germanium Pendant agar tetap berkilau?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    How do you look after a Germanium Pendant to keep the shine?
+                                </p>
 
                             </div>
 
@@ -1870,9 +2015,12 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Hindari kontak langsung dengan parfum berlebihan, air laut, atau bahan kimia keras. Simpan Pendant di tempat kering dan bersihkan secara berkala dengan kain lembut untuk menjaga kilau aslinya.
                                     </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        Avoid direct contact with excessive amounts of perfume, sea water or harsh chemicals. Store the pendant in a dry place and clean it regularly with a soft cloth to maintain its original lustre.
+                                    </p>
 
                                 </div>
 
@@ -1939,9 +2087,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Apakah Germanium Pendant tahan terhadap percikan air?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Is the Germanium Pendant splash-proof?
+                                </p>
 
                             </div>
 
@@ -1960,9 +2111,12 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Pendant tahan terhadap cipratan air ringan (seperti saat cuci tangan), tapi sebaiknya dilepas saat mandi, berenang, atau terkena bahan kimia untuk menjaga kilau tetap maksimal.
                                     </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        The pendant is resistant to light splashes of water (such as when washing your hands), but it is best to remove it when showering, swimming or coming into contact with chemicals to ensure it retains its maximum shine.
+                                    </p>
 
                                 </div>
 
@@ -2030,9 +2184,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Apakah Germanium Pendant cocok digunakan untuk semua usia?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Is the Germanium Pendant suitable for all ages?
+                                </p>
 
                             </div>
 
@@ -2051,9 +2208,12 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Ya! Desain Germanium Pendant yang elegan dan simpel cocok untuk remaja hingga dewasa.
                                     </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        Yes! The elegant and simple design of the Germanium Pendant is suitable for teenagers and adults alike,
+                                    </p>
 
                                 </div>
 
@@ -2121,9 +2281,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Apakah Germanium Pendant cepat rusak jika dipakai setiap hari?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Does a germanium pendant wear out quickly if worn every day?
+                                </p>
 
                             </div>
 
@@ -2142,9 +2305,12 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Tidak. Germanium Pendant dibuat dengan standar kualitas tinggi dan dilengkapi lapisan pelindung yang membuatnya aman untuk pemakaian harian, asalkan dirawat dengan baik dan benar.
                                     </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        No. The Germanium Pendant is manufactured to high quality standards and features a protective coating that makes it safe for everyday use, provided it is looked after properly.
+                                    </p>
 
                                 </div>
 
@@ -2212,9 +2378,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Dapatkah melakukan pemesanan dalam jumlah besar untuk souvenir atau kado?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Do you receive large orders for souvenirs or gifts?
+                                </p>
 
                             </div>
 
@@ -2233,9 +2402,12 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Kami sangat terbuka untuk pemesanan grosir atau korporat. Hubungi customer service kami untuk mendapatkan penawaran harga spesial & pengemasan sesuai kebutuhan Anda.
                                     </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        We are more than happy to accept wholesale or corporate orders. Please contact our customer service team to receive a special quote and packaging tailored to your requirements.
+                                    </p>
 
                                 </div>
 
@@ -2303,9 +2475,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Apakah Germanium Pendant sudah termasuk rantainya saat dibeli?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Does the Germanium Pendant come with a chain when purchased?
+                                </p>
 
                             </div>
 
@@ -2324,9 +2499,12 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Ya! setiap pembelian Germanium Pendant sudah termasuk rantai senada di dalam paket, jadi kamu tidak perlu membeli terpisah.
                                     </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        Yes! Every purchase of a Germanium Pendant comes with a matching chain included in the pack, so you don't need to buy one separately.
+                                    </p>
 
                                 </div>
 
@@ -2394,9 +2572,12 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
+                                <p class="id inter text-[30px] leading-[1.25]">
                                     Apakah manfaatnya langsung dirasakan?
                                 </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Are the benefits felt straight away?
+                                </p>
 
                             </div>
 
@@ -2415,99 +2596,11 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Pengalaman setiap pengguna dapat berbeda. Produk sebaiknya digunakan secara konsisten sebagai bagian dari gaya hidup sehat.
                                     </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <button
-                            type="button"
-                            class="
-                                faq-toggle
-                                bg-blue-500
-                                hover:bg-blue-600
-                                w-[72px]
-                                h-[72px]
-                                rounded-full
-                                flex
-                                items-center
-                                justify-center
-                                relative
-                                -top-9
-                                cursor-pointer
-                                shadow-lg
-                                transition-all
-                                duration-300
-                                hover:scale-110
-                            "
-                            aria-expanded="false"
-                        >
-                            <i
-                                class="
-                                    faq-arrow
-                                    ri-arrow-down-s-line
-                                    text-white
-                                    text-[50px]
-                                    transition-transform
-                                    duration-300
-                                "
-                            ></i>
-                        </button>
-
-                    </div>
-
-                    <div class="faq-item flex flex-col items-center">
-
-                        <div
-                            class="
-                                card-faq
-                                border-[3px]
-                                border-white
-                                bg-white/5
-                                backdrop-blur-sm
-                                rounded-2xl
-                                w-full
-                                max-w-[380px]
-                                min-h-[280px]
-                                p-7
-                                flex
-                                flex-col
-                                transition-all
-                                duration-500
-                            "
-                        >
-
-                            <div class="flex flex-1 items-center justify-center">
-
-                                <p class="inter text-[30px] leading-[1.25]">
-                                    Siapa yang dapat menggunakan Germanium Pendant?
-                                </p>
-
-                            </div>
-
-
-                            <div
-                                class="
-                                    faq-answer
-                                    max-h-0
-                                    opacity-0
-                                    overflow-hidden
-                                    transition-all
-                                    duration-500
-                                    ease-in-out
-                                "
-                            >
-
-                                <div class="border-t border-white/30 mt-6 pt-5">
-
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
-                                        Produk dapat digunakan oleh pria maupun wanita dewasa yang menginginkan aksesori premium dengan konsep wellness.
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        Each user's experience may vary. The product should be used consistently as part of a healthy lifestyle.
                                     </p>
 
                                 </div>
@@ -2576,8 +2669,11 @@
 
                             <div class="flex flex-1 items-center justify-center">
 
-                                <p class="inter text-[30px] leading-[1.25]">
-                                    Apakah dapat digunakan setiap hari?
+                                <p class="id inter text-[30px] leading-[1.25]">
+                                    Siapa yang dapat menggunakan Germanium Pendant?
+                                </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Who can use a Germanium Pendant?
                                 </p>
 
                             </div>
@@ -2597,8 +2693,108 @@
 
                                 <div class="border-t border-white/30 mt-6 pt-5">
 
-                                    <p class="inter text-[18px] leading-relaxed text-white/85">
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
+                                        Produk dapat digunakan oleh pria maupun wanita dewasa yang menginginkan aksesori premium dengan konsep wellness.
+                                    </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        The product is suitable for adult men and women who are looking for premium accessories with a wellness theme
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="
+                                faq-toggle
+                                bg-blue-500
+                                hover:bg-blue-600
+                                w-[72px]
+                                h-[72px]
+                                rounded-full
+                                flex
+                                items-center
+                                justify-center
+                                relative
+                                -top-9
+                                cursor-pointer
+                                shadow-lg
+                                transition-all
+                                duration-300
+                                hover:scale-110
+                            "
+                            aria-expanded="false"
+                        >
+                            <i
+                                class="
+                                    faq-arrow
+                                    ri-arrow-down-s-line
+                                    text-white
+                                    text-[50px]
+                                    transition-transform
+                                    duration-300
+                                "
+                            ></i>
+                        </button>
+
+                    </div>
+
+                    <div class="faq-item flex flex-col items-center">
+
+                        <div
+                            class="
+                                card-faq
+                                border-[3px]
+                                border-white
+                                bg-white/5
+                                backdrop-blur-sm
+                                rounded-2xl
+                                w-full
+                                max-w-[380px]
+                                min-h-[280px]
+                                p-7
+                                flex
+                                flex-col
+                                transition-all
+                                duration-500
+                            "
+                        >
+
+                            <div class="flex flex-1 items-center justify-center">
+
+                                <p class="id inter text-[30px] leading-[1.25]">
+                                    Apakah dapat digunakan setiap hari?
+                                </p>
+                                <p class="en inter text-[30px] leading-[1.25]">
+                                    Can it be used every day?
+                                </p>
+
+                            </div>
+
+
+                            <div
+                                class="
+                                    faq-answer
+                                    max-h-0
+                                    opacity-0
+                                    overflow-hidden
+                                    transition-all
+                                    duration-500
+                                    ease-in-out
+                                "
+                            >
+
+                                <div class="border-t border-white/30 mt-6 pt-5">
+
+                                    <p class="id inter text-[18px] leading-relaxed text-white/85">
                                         Ya, pendant dirancang untuk digunakan dalam aktivitas sehari-hari. Ikuti petunjuk pemakaian dan perawatan sesuai tipe produk.
+                                    </p>
+                                    <p class="en inter text-[18px] leading-relaxed text-white/85">
+                                        Yes, the pendant is designed for use in everyday activities. Please follow the instructions for use and care specific to your product type.
                                     </p>
 
                                 </div>
@@ -2653,6 +2849,7 @@
         </footer>
     </div>
 
+    <script src="js/switch-lang.js"></script>
     <script src="js/artikel.js"></script>
     <script src="js/shop-slider.js"></script>
     <script src="js/faq.js"></script>
